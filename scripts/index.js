@@ -1,27 +1,19 @@
 'use strict'
 
-const old = +prompt(`Сколько вам лет?`)
-let answer
+const age = prompt('Введите свой возраст: ');
+let word;
 
-switch (old) {
-    case 0:
-        answer = 'Вам не исполнилось даже года)'
-        break
-    case 1:
-        answer = 'Вам 1 год'
-        break
-    case 2:
-        answer = 'Вам ' + old + ' года'
-        break
-    case 3:
-        answer = 'Вам ' + old + ' года'
-        break
-    case 4:
-        answer = 'Вам ' + old + ' года'
-        break
-    default:
-        answer = 'Вам ' + old + ' лет'
-
+if (age !== null && !isNaN(age)) {
+    if (age % 10 === 1 && age % 100 !== 11) {
+        word = 'год';
+    } else if (age % 10 >= 2 && age % 10 <= 4 && (age % 100 < 10 || age % 100 >= 20)) {
+        word = 'года';
+    } else {
+        word = 'лет';
+    }
+    alert('Ваш возраст: ' + age + ' ' + word);
+} else {
+    alert('Не правильный возраст');
 }
 
 alert(answer)
