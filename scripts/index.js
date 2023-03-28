@@ -33,7 +33,7 @@ for (let i = 1; i <= 10; i++){
 
 let sum = 0;
 for (let i = 1; i <= 15; i++ ){
-    sum = sum + i;
+    sum += i;
 }
 console.log(sum)
 
@@ -43,7 +43,7 @@ console.log(sum)
 
 let mult = 1
 for (let i = 15; i <= 35; i++){
-    mult = mult * i;
+    mult *= i;
 }
 console.log(mult)
 
@@ -53,7 +53,7 @@ console.log(mult)
 
 let sum2 = 0
 for (let i = 1; i <= 500; i++){
-    sum2 = sum2 + i;
+    sum2 += i;
 }
 console.log(sum2 / 500)
 
@@ -63,7 +63,7 @@ console.log(sum2 / 500)
 
 let sum3 = 0
 for (let i = 30; i <= 80; i++){
-    if (i % 2 === 0)  sum3 = sum3 + i
+    if (i % 2 === 0)  sum3 += i
 }
 console.log(sum3)
 
@@ -91,7 +91,7 @@ for(let i = 1; i <= a; i++){
         output2 = output2 + i + ' ';
         if(i % 2 === 0){
             b++;
-            sum4 = sum4 + i;
+            sum4 += i;
         }
     }
 }
