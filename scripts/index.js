@@ -30,15 +30,15 @@ console.log(result);
 
 console.log((a > 2 && a < 11) || (b >= 6 && b < 14) ? 'Верно' : 'Неверно');
 
-const num = 3
-switch (true) {
-    case num === 1:
+const num = 2
+switch (num) {
+    case 1:
         console.log(`зима`);
         break;
-    case num === 2:
+    case 2:
         console.log(`весна`);
         break;
-    case num === 3:
+    case 3:
         console.log(`лето`);
         break;
     default:
