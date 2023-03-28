@@ -1,18 +1,16 @@
 'use strict'
 
-const number = prompt("Введите число:");
+const number = +prompt("Введите число:");
 
 if (number <= 1) {
     console.log("NaN");
 } else {
-    let divider = 2;
-    while (number % divider !== 0) {
-        divider++;
+    let divider;
+    for (divider = 2; number % divider !== 0; divider++) {
     }
-    if (number == divider) {    // есть ставить строгое сравнение то кол ломаеться, if не выполняеться
-        alert(`Число ` + number + ` простое и делиться только на смого себя либо 1`)
-    }
-    else {
+    if (number === divider) {
+        alert(`Число ${number} простое и делится только на само себя либо 1`);
+    } else {
         alert(`Наименьший делитель числа ${number} равен ${divider}`);
     }
 }
