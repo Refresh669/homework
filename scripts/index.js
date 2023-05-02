@@ -79,7 +79,16 @@ console.log(sum);
 
 // 15
 
+const arrSixteen = [1, 2, [3, 4], 5, [6, 7]];
+const arrSixteen2 = arrSixteen.filter((num) => Array.isArray(num));
+console.log(arrSixteen2);
 
+// 16
+const arrSeventeen =  [5,-3, 6,-5, 0,-7, 8, 9];
+const arrSeventeen2 = arrSeventeen.reduce((value, item) => {
+    return item < 0 ? value + 1 : value;
+},0);
+console.log(arrSeventeen2)
 
 
 
